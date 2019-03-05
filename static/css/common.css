@@ -1,0 +1,75 @@
+.post-list-cover {
+	width: 240upx;
+	height: 160upx;
+	border-radius: 8upx;
+	background: #EEEEEE;
+}
+
+.post-list-cover-sm{
+  width: 180upx;
+  height: 120upx;
+  border-radius: 8upx;
+  background: #EEEEEE;
+}
+.post-list-cover-xl {
+	width: 300upx;
+	height: 200upx;
+	border-radius: 12upx;
+	background: #EEEEEE;
+}
+
+.post-list-cover-inline {
+	width: 210upx;
+	height: 140upx;
+	border-radius: 8upx;
+	background: #EEEEEE;
+}
+
+.post-list-content {
+	height: 160upx;
+}
+
+.post-list-content .title {
+	height: 80upx;
+	line-height: 40upx;
+}
+
+.post-list-content .time {
+	margin-top: 10upx;
+	line-height: 30upx;
+}
+
+
+.icon-items {
+	height: 40upx;
+	line-height: 40upx;
+}
+
+.icon-items .icon-img {
+	display: inline-block;
+	width: 36upx;
+	height: 36upx;
+	padding-top: 2upx;
+	margin-right: 10upx;
+}
+
+.goods-list-cover {
+	width: 240upx;
+	height: 240upx;
+	border-radius: 8upx;
+	background: #EEEEEE;
+}
+
+.goods-list-cover-md {
+	width: 200upx;
+	height: 200upx;
+	border-radius: 8upx;
+	background: #EEEEEE;
+}
+
+.goods-list-content .title {
+	height: 100upx;
+	line-height: 50upx;
+	font-size: 32upx;
+}
+
