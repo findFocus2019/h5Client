@@ -63,10 +63,11 @@ class Cart {
         let num = item.num
         this.count += num
         if(item.check){
-          this.total += parseInt(item.price_sell * 100) * num
-          this.totalVip += parseInt(item.price_vip * 100) * num
-          this.score += parseInt(item.price_score_sell * 100) * num
-          this.scoreVip += parseInt(item.price_score_vip * 100) * num
+          this.total += item.price_sell * num
+          console.log('+total' , this.total)
+          this.totalVip += item.price_vip  * num
+          this.score += item.price_score_sell * num
+          this.scoreVip += item.price_score_vip * num
           checkCount++
 					checkCountType[type]++
         }
@@ -74,10 +75,10 @@ class Cart {
       }
     })
     
-    this.total = this.total/ 100
-    this.totalVip = this.totalVip / 100
-    this.score = this.score / 100
-    this.scoreVip = this.scoreVip / 100
+    this.total = parseFloat(this.total).toFixed(2)
+    this.totalVip = parseFloat(this.totalVip).toFixed(2)
+    this.score = parseFloat(this.score).toFixed(2)
+    this.scoreVip = parseFloat(this.scoreVip).toFixed(2)
     
     if(checkCount > 0 && checkCount == this.cart.length){
       this.checkAll = true
