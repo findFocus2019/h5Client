@@ -75,10 +75,10 @@ class Cart {
       }
     })
     
-    this.total = parseFloat(this.total).toFixed(2)
-    this.totalVip = parseFloat(this.totalVip).toFixed(2)
-    this.score = parseFloat(this.score).toFixed(2)
-    this.scoreVip = parseFloat(this.scoreVip).toFixed(2)
+    this.total = parseFloat(parseFloat(this.total).toFixed(2))
+    this.totalVip = parseFloat(parseFloat(this.totalVip).toFixed(2))
+    this.score = parseFloat(parseFloat(this.score).toFixed(2))
+    this.scoreVip = parseFloat(parseFloat(this.scoreVip).toFixed(2))
     
     if(checkCount > 0 && checkCount == this.cart.length){
       this.checkAll = true
